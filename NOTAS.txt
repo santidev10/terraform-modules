@@ -1,0 +1,20 @@
+[ec2-user@ip-172-31-92-248 terraform-module]$ ls
+test-tf-project  tf-module
+[ec2-user@ip-172-31-92-248 terraform-module]$ tree
+.
+├ test-tf-project
+│   ├ .terraform/modules 
+│   ├ resource.tf
+│   ├ terraform.tfstate
+│   ├ terraform.tfstate.backup
+│   └ variables.tf
+└ tf-module
+    ├ main-module.tf
+    └ variables.tf
+
+2 directories, 6 files
+[ec2-user@ip-172-31-92-248 test-tf-project]$ terraform init
+[ec2-user@ip-172-31-92-248 test-tf-project]$ terraform plan
+[ec2-user@ip-172-31-92-248 test-tf-project]$ terraform apply
+
+
